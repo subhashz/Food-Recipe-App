@@ -1,1 +1,4 @@
-# Food-Recipe-App
+Abstract:
+The Food Recipe App is a mobile application developed using Flutter to help users easily discover and explore different food recipes. The application provides detailed information about various dishes, including ingredients, preparation steps, cooking time, and food images. Users can browse recipes based on different categories and search for their preferred dishes.
+
+The main purpose of this project is to provide a simple, user-friendly, and convenient platform for learning and preparing different types of food. The application demonstrates the use of Flutter for developing an interactive mobile application with features such as navigation, lists, images, search, and user-friendly interfaces. This project is suitable for beginners and provides practical experience in Flutter application development.
