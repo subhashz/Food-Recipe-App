@@ -1,0 +1,9 @@
+class Recipe {
+  final String name;
+  final String image;
+
+  Recipe({
+    required this.name,
+    required this.image,
+  });
+}
