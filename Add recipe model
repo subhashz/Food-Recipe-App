@@ -1,21 +1,10 @@
-import '../models/recipe.dart';
-
-final List<Recipe> recipes = [
-  Recipe(
-    name: 'Chicken Biryani',
-    image: 'https://images.unsplash.com/photo-1563379091339-03246963d96c',
+TextField(
+  controller: searchController,
+  decoration: InputDecoration(
+    hintText: 'Search recipes...',
+    prefixIcon: const Icon(Icons.search),
+    border: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(12),
+    ),
   ),
-  Recipe(
-    name: 'Paneer Butter Masala',
-    image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950',
-  ),
-  Recipe(
-    name: 'Masala Dosa',
-    image: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc',
-  ),
-  Recipe(
-    name: 'Veg Fried Rice',
-    image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b',
-  ),
-];
-
+),
