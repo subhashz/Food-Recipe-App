@@ -1,9 +1,21 @@
-class Recipe {
-  final String name;
-  final String image;
+import '../models/recipe.dart';
 
-  Recipe({
-    required this.name,
-    required this.image,
-  });
-}
+final List<Recipe> recipes = [
+  Recipe(
+    name: 'Chicken Biryani',
+    image: 'https://images.unsplash.com/photo-1563379091339-03246963d96c',
+  ),
+  Recipe(
+    name: 'Paneer Butter Masala',
+    image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950',
+  ),
+  Recipe(
+    name: 'Masala Dosa',
+    image: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc',
+  ),
+  Recipe(
+    name: 'Veg Fried Rice',
+    image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b',
+  ),
+];
+
