@@ -1,10 +1,27 @@
-TextField(
-  controller: searchController,
-  decoration: InputDecoration(
-    hintText: 'Search recipes...',
-    prefixIcon: const Icon(Icons.search),
-    border: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12),
-    ),
-  ),
-),
+List<Recipe> filteredRecipes = [];
+
+@override
+void initState() {
+  super.initState();
+
+  filteredRecipes = recipes;
+
+  searchController.addListener(() {
+    searchRecipes(searchController.text);
+  });
+}
+
+void searchRecipes(String query) {
+  setState(() {
+    if (query.trim().isEmpty) {
+      filteredRecipes = recipes;
+      return;
+    }
+
+    filteredRecipes = recipes.where((recipe) {
+      return recipe.name
+          .toLowerCase()
+          .contains(query.toLowerCase());
+    }).toList();
+  });
+}
